@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>C++ assignment</title>
+  </head>
+  <body>
+    <div style="background-image: url(https://thumbs.gfycat.com/TestyDisloyalChinchilla-size_restricted.gif); background-repeat: no-repeat; background-size: cover;">
+        <h1 class="text-center text-text text-info py-5 fs-1">Sarojini Naidu Government Girls PG (Autonomous) College, Bhopal (M.P)</h1>
+        <h1 class="text-center text-light py-5 ">BCA - 1st YEAR </h1>
+        <h1 class="text-center text-light py-5">CCE - I</h1>
+        <h1 class="text-center text-light py-5">C++ Assignment</h1>
+    </div>
+    <div style="background-color: black; background-image: url(https://media.tenor.com/2EAllR48wZMAAAAi/borboletas-butterflies.gif); background-size:cover;" class="">
+      <h1 class="d-flex fst-italic justify-content-center py-5"></h1>
+      <h1 class="d-flex fst-italic justify-content-center py-5"></h1>
+      <h1 class="d-flex fst-italic justify-content-center pt-2 text-white">Contents</h1>
+      <div class="d-flex align-items-center flex-column text-bolder fs-4 p-5 fst-italic text-light">
+        <ul style="list-style: none;">
+          <li class="p-2">Acknowledgement</li>
+          <li class=" p-2">History of C++</li>
+          <li class="p-2">Compiling and Linking</li>
+          <li class=" p-2">User-defined data type</li>
+          <li class=" p-2">Scope resolution operator</li>
+          <li class="p-2">All forms of IF statement</li>
+          <li class=" p-2">Question</li>
+        </ul>
+      </div>
+    </div>
+    <div style="background-image: url(https://img.pikbest.com/backgrounds/20190711/gorgeous-dream-light-effect-line-background-gif_2834982.jpg!c1024wm0); background-repeat: no-repeat; background-size: cover;">
+      <h1 class="d-flex fst-italic justify-content-center py-5 text-success">Acknowledgements</h1>
+      <div class="d-flex align-items-start flex-column text-bolder fs-4 p-5 fst-italic text-light" >
+        <p><b>First and foremost, we would like to express my gratitude to our Mentor, Mrs. Neetu Sahu, who was a continual source of inspiration. She pushed us to think imaginatively and urged us to do this work without hesitation. Her vast knowledge and extensive experience enabled us to successfully accomplish this project. This endeavour would not have been possible without her help and supervision.</b></p>
+          <p><b>I’d like to thank our Principal, Dr. Pratibha Singh and HOD sir of IT department for providing me with the opportunity to work on the project.</b></p> 
+          <p><b>Last but not least, I would like to express my gratitude to my family members, siblings, and friends for their invaluable assistance.</b></p>
+        <p><b>I would like to acknowledge that this project was completed entirely by me and not by someone else.</b></p>
+        <br><br>
+        <span class="align-items-end text-light"><b>Bhavna Makode</b></span>
+      </div>
+    </div>
+    <div style="background-image: url(https://st.depositphotos.com/1656517/2594/v/450/depositphotos_25947767-stock-illustration-abstract-light-background.jpg); background-repeat: no-repeat; background-size: cover;">
+      <h1 class="d-flex fst-italic justify-content-center py-5 text-primary">History of C++</h1>
+      <div class="d-flex align-items-start flex-column text-bolder fs-5 p-5 fst-italic" >
+        <p>The C++ programming language has a history going back to 1979, when Bjarne Stroustrup was doing work for his Ph.D. thesis. He began work on "C with Classes", which as the name implies was meant to be a superset of the C language. His goal was to add object-oriented programming into the C language, which was and still is a language well-respected for its portability without sacrificing speed or low-level functionality.</p>
+        <p>His language included classes, basic inheritance, inlining, default function arguments, and strong type checking in addition to all the features of the C language. The first C with Classes compiler was called Cfront, which was derived from a C compiler called CPre. It was a program designed to translate C with Classes code to ordinary C.</p>
+        <p>In 1983, the name of the language was changed from C with Classes to C++. The ++ operator in the C language is an operator for incrementing a variable, which gives some insight into how Stroustrup regarded the language. Many new features were added around this time, the most notable of which are virtual functions, function overloading, references with the & symbol, the const keyword, and single-line comments using two forward slashes.</p>
+        <p>In 1985, C++ was implemented as a commercial product. The language was not officially standardized yet. The language was updated again in 1989 to include protected and static members, as well as an inheritance from several classes.</p>
+        <p>In 1990, Turbo C++ was released as a commercial product. Turbo C++ added a lot of additional libraries which have had a considerable impact on C++'s development.</p>
+        <p>In 1998, the C++ standards committee published the first international standard for C++ ISO/IEC 14882:1998, which is informally known as C++98. The Standard Template Library, which began its conceptual development in 1979, was also included. In 2003, the committee responded to multiple problems that were reported with their 1998 standard and revised it accordingly. The changed language was named C++03.</p>
+        <p>In mid-2011, the new C++ standard (C++11) was finished. The new features included Regex support, a randomization library, a new C++ time library, atomics support, a standard threading library, a new for loop syntax providing functionality similar to for each loops in certain other languages, the auto keyword, new container classes, better support for unions and array-initialization lists and variadic templates.</p>
+        <br><br>
+      </div>
+    </div>
+    <div style="background-image: url(https://wallpaperaccess.com/full/2293059.jpg); background-repeat: no-repeat; background-size: cover;">
+      <h1 class="d-flex fst-italic justify-content-center py-5 text-danger">Compiling and Linking</h1>
+      <h3 class="d-flex px-5">Compilation</h3>
+      <div class="d-flex align-items-start flex-column text-bolder fs-5 p-5 fst-italic" >
+        <p>This phase translates the program into a low level assembly level code. The compiler takes the preprocessed file ( without any directives) and generates an object file containing assembly level code. Now, the object file created is in the binary form. In the object file created, each line describes one low level machine level instruction . The conversion to assembly language is important as it is common output language for many compilers of different high-level languages.</p>
+        <p>There is also assembly phase which converts these object files in assembly code into machine level instructions and the file created is a relocatable object code. Hence, the compilation phase generates the relocatable object program and this program can be used in different places without have to compile again.</p>
+        <p>But you still can’t run these object files until to convert them into executable file, now here linker comes into play, which links all the object files to generate single executable file.</p>
+        <br><br>
+      </div>
+      <h3 class="d-flex px-5">Linking</h3>
+      <div class="d-flex align-items-start flex-column text-bolder fs-5 p-5 fst-italic" >
+        <p>This phase translates the program into a low level assembly level code. The compiler takes the preprocessed file ( without any directives) and generates an object file containing assembly level code. Now, the object file created is in the binary form. In the object file created, each line describes one low level machine level instruction . The conversion to assembly language is important as it is common output language for many compilers of different high-level languages.</p>
+        <p>There is also assembly phase which converts these object files in assembly code into machine level instructions and the file created is a relocatable object code. Hence, the compilation phase generates the relocatable object program and this program can be used in different places without have to compile again.</p>
+        <p>But you still can’t run these object files until to convert them into executable file, now here linker comes into play, which links all the object files to generate single executable file.</p>
+        <br><br>
+      </div>
+    </div>
+    <div style="background-image: url(https://i.ytimg.com/vi/eTD0WWFIDAg/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBHNxGOFhUcwp5gNGdoIbXtDLh_Yw); background-repeat: no-repeat; background-size: cover;">
+      <h1 class="d-flex fst-italic justify-content-center py-5 text-warning">User-defined data types</h1>
+      <div class="d-flex align-items-start flex-column text-bolder fs-5 p-5 fst-italic text-white" >
+        <p>The data types that are defined by the user are called the derived datatype or user-defined derived data type.</p>
+        <p>These types include:</p>
+        <ul>
+          <li>Class</li>
+          <li>Structure</li>
+          <li>Union</li>
+          <li>Enumeration</li>
+          <li>typedef defined data type</li>
+        </ul>
+        <p>Below is the detailed description of the following types:</p>
+        <p><p class="text-warning">Class:</p> The building block of C++ that leads to Object-Oriented programming is a Class. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A class is like a blueprint for an object.</p>
+        <p>Syntax:</p>
+        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Classes-and-Objects-in-C.png" alt="" width="50%">
+        <p><p class="text-warning">Structure:</p> A structure is a user defined data type in C/C++. A structure creates a data type that can be used to group items of possibly different types into a single type.</p>
+        <p>Syntax:</p>
+        <pre>struct address {
+          char name[50];
+          char street[100];
+          char city[50];
+          char state[20];
+          int pin;
+      };</pre>
+        <p><p class="text-warning">Union:</p> Like Structures, union is a user defined data type. In union, all members share the same memory location. For example in the following C program, both x and y share the same location. If we change x, we can see the changes being reflected in y.</p>
+        <p><p class="text-warning">Enumeration:</p> Enumeration (or enum) is a user defined data type in C. It is mainly used to assign names to integral constants, the names make a program easy to read and maintain.</p>
+        <p>Syntax:</p>
+        <p>enum State {Working = 1, Failed = 0}; </p>
+        <p><p class="text-warning">Typedef:</p> C++ allows you to define explicitly new data type names by using the keyword typedef. Using typedef does not actually create a new data class, rather it defines a name for an existing type. This can increase the portability(the ability of a program to be used across different types of machines; i.e., mini, mainframe, micro, etc; without much changes into the code)of a program as only the typedef statements would have to be changed. Using typedef one can also aid in self-documenting code by allowing descriptive names for the standard data types.</p>
+        <p>Syntax:</p>
+        <p>typedef type name;</p>
+        <p>where type is any C++ data type and name is the new name for this data type.
+          This defines another name for the standard type of C++.</p>
+        <br><br>
+      </div>
+      <div style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/004/547/490/small/black-cloth-background-with-copy-space-3d-illustration-photo.jpg); background-repeat: no-repeat; background-size: cover;">
+        <h1 class="d-flex fst-italic justify-content-center py-5 text-info">Scope Resolution Operator</h1>
+        <div class="d-flex align-items-start flex-column text-bolder fs-4 p-5 fst-italic text-light" >
+          <p>In C++, scope resolution operator is : :</p>
+          <p>It is used for following purposes.</p>
+          <ol>
+            <li>To access a global variable when there is a local variable with same name: </li>
+            <li> To define a function outside a class. </li>
+            <li>To access a class’s static variables. </li>
+            <li> In case of multiple Inheritance: If same variable name exists in two ancestor classes, we can use scope resolution operator to distinguish. </li>
+            <li>For namespace If a class having the same name exists inside two namespace we can use the namespace name with the scope resolution operator to refer that class without any conflicts</li>
+            <li> Refer to a class inside another class: If a class exists inside another class we can use the nesting class to refer the nested class using the scope resolution operator</li>
+          </ol>
+          <br><br>
+        </div>
+      </div>
+      <div style="background-image: url(https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JlZW4lMjBsZWF2ZXMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80); background-repeat: no-repeat; background-size: cover;">
+        <h1 class="d-flex fst-italic justify-content-center py-5 text-warning">Decision Making in C++</h1>
+        <div class="d-flex align-items-start flex-column text-bolder fs-4 p-5 fst-italic text-white" >
+          <p>Decision-making statements in programming languages decide the direction of the flow of program execution. Decision-making statements available in C or C++ are: </p>
+          <ol>
+            <li>if statement</li>
+            <li>if-else statements</li>
+            <li>nested if statements</li>
+            <li>if-else-if ladder</li>
+            <li>switch statements</li>
+            <li>Jump Statements:</li>
+            <ul>
+              <li>break</li>
+              <li>continue</li>
+            </ul>
+          </ol>
+          <p><p class="text-warning">1. if statement in C/C++</p>if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.</p>
+        <p>Syntax:</p>
+        <pre>if(condition) 
+ {
+  // Statements to execute if
+    // condition is true
+  }</pre>
+          <p>Here, the condition after evaluation will be either true or false. C if statement accepts boolean values – if the value is true then it will execute the block of statements below it otherwise not. If we do not provide the curly braces ‘{‘ and ‘}’ after if(condition) then by default if statement will consider the first immediately below statement to be inside its block. </p>
+          <p>Example:</p>
+          <pre>if(condition)
+  statement1;
+  statement2;
+         </pre>
+<p>// Here if the condition is true, if block </p> 
+<p>// will consider only statement1 to be inside </p>
+<p>// its block.</p>
+        <p>Flowchart:</p>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220324151146/ifstatementflowchart.jpg" alt="" width="50%">
+        <p>Example:</p>
+        <p>// C++ program to illustrate If statement</p>
+         <pre>#include <iostream>
+using namespace std;
+           
+int main(){
+int i = 10;
+           
+if (i > 15) {
+  cout << "10 is greater than 15";
+}
+           
+  cout << "I am Not in if";
+}</pre>
+          <p>Output:</p>
+          <p>I am Not in if</p>
+          <p>As the condition present in the if statement is false. So, the block below the if statement is not executed.</p>
+        <p><p class="text-warning">2. if-else in C/C++</p>The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the C else statement. We can use the else statement with the if statement to execute a block of code when the condition is false. </p>
+        <p>Syntax:</p>
+        <pre>if (condition)
+{
+  // Executes this block if
+  // condition is true
+}
+else
+{
+// Executes this block if
+// condition is false
+}</pre>
+          <p>Flowchart:</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220324151420/ifelsestatementflowchart.jpg" alt="" width="50%">
+          <p>Example:</p>
+          <p>// C++ program to illustrate if-else statement</p>
+           <pre>#include <iostream>
+using namespace std;
+             
+int main(){
+int i = 20;
+             
+if (i < 15)
+ cout << "i is smaller than 15";
+else
+ cout << "i is greater than 15";
+             
+  return 0;
+}</pre>
+            <p>Output:</p>
+            <p>i is greater than 15</p>
+            <p>The block of code following the else statement is executed as the condition present in the if statement is false.</p>
+        <p><p class="text-warning">3. nested-if in C/C++</p>A nested if in C is an if statement that is the target of another if statement. Nested if statements mean an if statement inside another if statement. Yes, both C and C++ allow us to nested if statements within if statements, i.e, we can place an if statement inside another if statement. </p>
+        <p>Syntax:</p>
+        <pre>if (condition1){</pre>
+<p>// Executes when condition1 is true</p>
+<pre>if (condition2) 
+{</pre>
+<p>// Executes when condition2 is true</p>
+<pre>}
+}</pre>
+          <p>Flowchart:</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220324151704/nestedifstatementflowchart.jpg" alt="" width="50%">
+          <p>Example:</p>
+          <p>// C++ program to illustrate nested-if statement</p>
+            <pre>#include <iostream>
+using namespace std;
+             
+int main(){
+  int i = 10;
+  if (i == 10) {
+    // First if statement
+    if (i < 15)</pre>
+      <p>cout << "i is smaller than 15\n";</p>
+             
+      <pre>// Nested - if statement
+// Will only be executed if
+// statement above is true
+if (i < 12)</pre>
+  <p>cout << "i is smaller than 12 too\n";</p>
+<pre>else
+cout << "i is greater than 15";
+}
+  return 0;
+}</pre>
+            <p>Output:</p>
+            <pre>i is smaller than 15
+i is smaller than 12 too</pre>
+        <p><p class="text-warning">4. if-else-if ladder in C/C++</p>Here, a user can decide among multiple options. The C if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that if is executed, and the rest of the C else-if ladder is bypassed. If none of the conditions is true, then the final else statement will be executed. </p>
+        <p>Syntax:</p>
+        <pre>if (condition)
+          statement;
+      else if (condition)
+          statement;
+      .
+      .
+      
+      else
+          statement;</pre>
+          <p>Flowchart:</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220324151941/ifelseifladderflowchartmin.jpg" alt="" width="50%">
+          <p>Example:</p>
+          <p>// C++ program to illustrate if-else-if ladder</p>
+            <pre>#include <iostream>
+using namespace std;
+             
+int main(){
+int i = 20;
+             
+  if (i == 10)
+   cout << "i is 10";
+  else if (i == 15)
+   cout << "i is 15";
+  else if (i == 20)
+   cout << "i is 20";
+  else
+   cout << "i is not present";
+}</pre>
+            <p>Output:</p>
+            <p>i is 20</p>
+        <p><p class="text-warning">5. Jump Statements in C/C++</p>These statements are used in C or C++ for the unconditional flow of control throughout the functions in a program. They support four types of jump statements:</p>
+        <p><p class="text-warning">A) break</p>This loop control statement is used to terminate the loop. As soon as the break statement is encountered from within a loop, the loop iterations stop there, and control returns from the loop immediately to the first statement after the loop. </p>
+        <p>Syntax:</p>
+        <p>break;</p>
+        <p>Basically, break statements are used in situations when we are not sure about the actual number of iterations for the loop or we want to terminate the loop based on some condition.  </p>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220324152255/breakflowchart.jpg" alt="" width="50%">
+        <p>Example:</p>
+        <pre>// C++ program to illustrate
+// to show usage of break
+// statement
+#include <iostream>
+using namespace std;</pre>
+           
+<p>void findElement(int arr[], int size, int key){</p>
+<p>// loop to traverse array and search for key</p>
+              <pre>for(int i = 0; i < size; i++){
+if (arr[i] == key) {</pre>
+ <p>cout << "Element found at position: "<< (i + 1);</p>
+  <pre>break;
+  }
+}
+}</pre>
+           
+<p>//Driver program to test above function</p>
+<pre>int main(){
+int arr[]={1, 2, 3, 4, 5, 6};
+int n = 6; // no of elements
+int key=3; //key to be searched</pre>
+           
+<p>// Calling function to find the key</p>
+<pre>findElement(arr, n, key);
+           
+  return 0;
+}</pre>
+          <p>Output:</p>
+          <p> Element found at position: 3</p>
+          <p class="text-warning">B) continue </p>This loop control statement is just like the break statement. The continue statement is opposite to that of the break statement, instead of terminating the loop, it forces to execute the next iteration of the loop. 
+          As the name suggests the continue statement forces the loop to continue or execute the next iteration. When the continue statement is executed in the loop, the code inside the loop following the continue statement will be skipped and the next iteration of the loop will begin. </p>
+        <p>Syntax:</p>
+        <p>continue;</p>
+        <p>Flowchart:</p>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220324152446/Continueflowchart.jpg" alt="" width="50%">
+        <p>Example:</p>
+        <p>// C++ program to explain the use</p>
+          <p>// of continue statement</p>
+          <pre>#include <iostream>
+using namespace std;
+int main(){
+// loop from 1 to 10
+for(int i = 1; i <= 10; i++){
+// If i is equals to 6
+// continue to next iteration
+// without printing
+if (i == 6)
+ continue;
+else
+//otherwise print value of i
+ cout << i << " ";
+}
+  return 0;
+}</pre>
+          <p>Output:</p>
+          <p>1 2 3 4 5 7 8 9 10</p>
+          <p>If you create a variable in if-else in C/C++, it will be local to that if/else block only. You can use global variables inside the if/else block. If the name of the variable you created in if/else is as same as any global variable then priority will be given to `local variable`. </p>
+          <pre>#include <iostream>
+using namespace std;
+             
+int main(){</pre>
+<p>int gfg = 0; // local variable for main</p>
+ <p>cout << "Before if-else block " << gfg << endl;</p>
+<pre>if(1){
+int gfg = 100; </pre>
+<p>// new local variable of if block</p>
+<p>cout << "if block" << gfg << endl;<p>
+}
+<p>cout << "After if block " << gfg << endl;</p>
+ <pre> return 0;
+}
+/*
+ Before if-else block 0
+ if block 100
+ After if block 0
+*/</pre>
+            <p>Output:</p>
+            <pre>Before if-else block 0
+if block 100
+After if block 0</pre>
+          <br><br>
+        </div>
+      </div>
+      <div style="background-image: url(https://files.123freevectors.com/wp-content/original/131104-abstract-colorful-polygon-pattern-background-vector-art.jpg); background-repeat: no-repeat; background-size: cover;">
+        <h1 class="d-flex fst-italic justify-content-center py-5 ">Question</h1>
+        <div class="d-flex align-items-start flex-column text-bolder fs-5 p-5 fst-italic" >
+          <p class="fs-3">Write a program to check given number is prime or not.</p>
+          <img src="https://www.codevscolor.com/static/26cea90055d6d3c051220b082fb3f687/10d53/c-plus-plus-find-prime.png" alt="" width="70%">
+        </div>
+      </div>
+      <div style="background-image: url(https://i.pinimg.com/originals/4c/9e/bd/4c9ebd0d9eb393f9a5ec21bf7bad99ef.gif); background-repeat: no-repeat; background-size: cover;">
+        <h1 class="d-flex fst-italic justify-content-center py-5 text-light">Thank you</h1>
+        <h1 class="d-flex fst-italic justify-content-center py-5"></h1>
+        <h1 class="d-flex fst-italic justify-content-start p-5 text-white">Made By - </h1>
+        <h1 class="d-flex fst-italic justify-content-start p-5 text-white">Bhavna Makode</h1>
+        <h1 class="d-flex fst-italic justify-content-center py-5"></h1>
+      </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
